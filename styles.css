@@ -92,3 +92,8 @@ ul {
 .hidden {
   visibility: hidden;
 }
+
+input[type=button] {
+  padding: 8px;
+  border-radius: 10px;
+}

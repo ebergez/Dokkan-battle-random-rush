@@ -8,6 +8,7 @@ var listeDesPicksJ1 = document.querySelector('ul.listeDePersoJ1');
 var listeDesPicksJ2 = document.querySelector('ul.listeDePersoJ2');
 var alternate = 0;
 var clearButton = document.querySelector('input.clear')
+var linesForm = document.querySelector('form.linesDefining');
 console.log(generateButton);
 console.log(champ1,champ2);
 function getRandomInt(max) {
@@ -22,6 +23,8 @@ boutonValiderLignes.addEventListener('click',function () {
   champ2.value = '';
   generateButton.classList.remove('hidden');
   clearButton.classList.remove('hidden');
+  linesForm.innerHTML = '';
+
 });
 
 generateButton.addEventListener('click',function () {
